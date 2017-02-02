@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+
+    input[type=text], input[type=password] {
+        width: 200px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        margin-left:20px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 180px;
+        border-radius: 25px;
+    }
+
+    .cancelbtn {
+        width: 120px;
+        padding: 10px 18px;
+        background-color: #f44336;
+        margin-left: 320px;
+        border-radius: 25px;
+    }
+
+
+    div {
+
+height: 30%;
+        border: 25px solid green;
+        padding: 25px;
+        margin: 25px;
+    }
+    body  {
+        background-image: url("1.jpg");
+        background-color: #cccccc;
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+        span.psw {
+            display: block;
+            float: none;
+        }
+        .cancelbtn {
+            width: 100%;
+        }
+    }
+    .center {
+        margin-left:230px;
+        width: 60%;
+        padding: 10px;
+    }
+table{
+    margin-top: auto;
+}
+
+</style>
+<body>
+<div class="center">
+
+    <form action="login.html">
+
+        <table align="center"><tr><td colspan="2" align="center"><h2 align="center">Register Here</h2></td></tr><tr><td>
+            <label><b>Fullname</b></label></td><td>
+            <input type="text" placeholder="Enter Fullname" name="fname" ></td></tr>
+            <br><tr><td>
+            <label><b>Email ID</b></label></td><td>
+            <input type="text" placeholder="Enter EmailID" name="email" ></td></tr>
+            <br><tr><td>
+                <label><b>Username</b></label></td><td>
+            <input type="text" placeholder="Enter username" name="uname" ></td></tr>
+            <br><tr><td>
+                <label><b>Password</b></label></td><td>
+            <input type="password" placeholder="Enter Password" name="psw" ></td></tr>
+            <br><tr><td>
+                <label><b>Confirm Password</b></label></td><td>
+                <input type="password" placeholder="Enter Password" name="pswc"></td></tr>
+            <br><tr><td colspan="2" align="center" >
+            <button type="submit" >Register</button></table></td></tr>
+
+
+
+            <button  type="button" class="cancelbtn" onClick="window.open('main.html')">Cancel</button>
+
+    </form>
+</div>
+</body>
+</html>
+
